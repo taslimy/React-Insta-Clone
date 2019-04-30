@@ -3,11 +3,12 @@ import "./Search.css"
 
 const Search = (props) => {
   return (
-    <>
+    // Dont wrap with a tags or href attribute This is NOT HTML.
+    <Fragment>
       <header className="search-header">
         <nav>
           <section className="search-logo">
-            <a href="#"><i class="fab fa-instagram fa-2x" /></a>
+           <i class="fab fa-instagram fa-2x" />
           </section>
 
           <section className="search-input">
@@ -15,13 +16,13 @@ const Search = (props) => {
           </section>
 
           <section className="search-icons">
-           <a href=""> <i className="far fa-compass fa-2x" /></a>
-           <a href=""><i className="far fa-heart fa-2x" /></a>
-           <a href=""><i className="far fa-user fa-2x" /></a>
+           <i className="far fa-compass fa-2x" />
+           <i className="far fa-heart fa-2x" />
+           <i className="far fa-user fa-2x" />
           </section>
         </nav>
       </header>
-    </>
+    </Fragment>
   );
 }
 

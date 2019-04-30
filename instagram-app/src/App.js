@@ -14,12 +14,14 @@ class App extends React.Component {
 
   render() {
     return (
+      <Fragment>
       <div className="App">
         <>
           <Search />
           <PostMap posts={this.state.posts} />
         </>
       </div>
+      </Fragment>
     );
   }
 }

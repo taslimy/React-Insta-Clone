@@ -15,8 +15,8 @@ const Comment = (props) => {
 
 Comment.propTypes = {
   comment: shape({
+    username: string,
     text: string,
-    username: string
   })
 };
 

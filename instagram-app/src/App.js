@@ -8,19 +8,26 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: dummyData
+      posts: []
     };
+  }
+  // Passsing data through setState.
+  componentDidMount() {
+    this.setState({
+      posts: dummyData
+    });
   }
 
   render() {
     return (
       <Fragment>
-      <div className="App">
-        <>
-          <Search />
-          <PostMap posts={this.state.posts} />
-        </>
-      </div>
+        <div className="App">
+          <>
+            <Search />
+            <PostMap 
+            posts={this.state.posts} />
+          </>
+        </div>
       </Fragment>
     );
   }

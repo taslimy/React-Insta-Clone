@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Post from "./Post";
 import "./Post.css";
 
-const PostMap = (props)=> {
+const PostMap = (props) => {
   return (
     <Fragment>
     <section className="card-container">

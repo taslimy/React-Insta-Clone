@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "billabongregular";
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff")
+      format("woff"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.login-section {
+  margin-top: 150px;
+  max-width: 400px;
+  height: auto;
+  margin: 150px auto;
+  border: 1px solid lightgray;
+  text-align: center;
+  background: #ffffff;
+}
+
+.login-section h1 {
+  font-family: "billabongregular";
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 0 50px 50px 50px;
+
+}
+
+.form-section input {
+  border: 1px solid lightgray;
+  color: #999;
+  background: #fafafa;
+  height: 36px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.form-section button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.form-section button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: #fff;
+}

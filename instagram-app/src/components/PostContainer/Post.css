@@ -32,9 +32,22 @@
   margin-right: 15px;
 }
 
+.image-heart {
+  transition: transform .2s; /* Animation */
+  font-weight: normal;
+  cursor: pointer;
+  width: 25px;
+}
+
+.image-heart:hover {
+  transform: scale(1.5);
+}
+
 img {
   width: 100%;
 }
+
+
 
 .card-head {
   display: flex;

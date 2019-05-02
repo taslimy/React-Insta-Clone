@@ -3,11 +3,9 @@ import SearchBar from "../SearchBar/Search";
 import "./Login.css";
 
 class Login extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      username: "",
-      password: ""
     };
   }
 
@@ -16,19 +14,12 @@ class Login extends Component {
       <Fragment>
         <SearchBar />
         <section className="login-section">
-          <h1>Instagram clone</h1>
+          <h1>Instagram Clone</h1>
+          <span role="img">🤷‍♂</span>
           <form className="form-section">
-            <input
-              type="text"
-              placeholder="Username"
-              name="username"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-            />
-            <button>Log In</button>
+            <input onChange={this.props.username} type="text" placeholder="Username" name="username" />
+            <input onChange={this.props.password} type="password" placeholder="Password" name="password" />
+            <button onClick={this.props.changeShit}>Log In</button>
           </form>
         </section>
       </Fragment>

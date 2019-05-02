@@ -2,14 +2,15 @@ import React from "react";
 import "./App.css";
 import PostPage from "./components/PostContainer/PostPage";
 import Login from "./components/LoginPage/Login";
-import Authenticate from "./components/Authentication/withAuthenticate";
+import withAuthenticate from "./components/Authentication/withAuthenticate";
+const ComponentFromWithAuthenticate = withAuthenticate(PostPage)
 
 const App = () => {
   return (
     <>
-      <PostPage />
+      <ComponentFromWithAuthenticate />
     </>
   );
 };
 
-export default Authenticate(App)(Login);
+export default App;

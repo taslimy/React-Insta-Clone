@@ -1,10 +1,10 @@
 import React, { Fragment, Component } from "react";
-import dummyData from "../..//dummy-data";
+import dummyData from "../../dummy-data";
 import "../../App.css";
 import Search from "../SearchBar/Search";
 import PostMap from "../PostContainer/PostMap";
 
-class App extends Component {
+class PostPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,4 +47,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default PostPage;

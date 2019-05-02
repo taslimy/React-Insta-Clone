@@ -25,8 +25,12 @@
 
 .login-section h1 {
   font-family: "billabongregular";
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   letter-spacing: 3px;
+}
+
+.login-section span {
+   font-size: 50px;
 }
 
 .form-section {

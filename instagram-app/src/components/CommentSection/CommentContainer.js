@@ -15,12 +15,13 @@ class CommentContainer extends Component {
 
   addComment = (event) => {
     event.preventDefault();
-
+    const username = localStorage.getItem('user');
     const newComment = {
-      username: 'Taslim',
+      username: username,
       text: this.state.commentInput,
       timestamp: moment().format("M/D/YYYY, h:mm:ss a")
     };
+
     //  Spread the existing array adding the new comment
     this.setState({
       comments: [...this.state.comments, newComment],

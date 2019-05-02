@@ -1,14 +1,35 @@
 import React, { Fragment } from "react";
 import {string, shape} from "prop-types";
-import "./Comment.css";
+import styled from 'styled-components';
+// import "./Comment.css";
+
+// # Style # //
+
+const CommentContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+`;
+
+const SpanUsername = styled.span`
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0px 5px 5px 0px;
+`;
+
+const SpanComment = styled.span`
+  font-size: 15px;
+`;
+
+// # End Style # //
 
 const Comment = (props) => {
   return (
     <Fragment>
-      <article className="comment-container">
-        <span className="username">{props.comment.username} </span>
-        <span className="user-comment">{props.comment.text}</span>
-      </article>
+      <CommentContainer>
+        <SpanUsername>{props.comment.username} </SpanUsername>
+        <SpanComment className="user-comment">{props.comment.text}</SpanComment>
+      </CommentContainer>
     </Fragment>
   );
 };

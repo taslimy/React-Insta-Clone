@@ -3,8 +3,55 @@ import PostHeader from "./PostHeader";
 import CommentContainer from "../CommentSection/CommentContainer";
 import notFull from "../../asset/heart-regular.svg";
 import fullHeart from "../../asset/heart-solid.svg";
+import styled from "styled-components";
 // import PostPage from './PostPage'
-import "./Post.css";
+// import "./Post.css";
+
+// # Style # //
+
+const FullWidth = styled.img`
+  width: 100%;
+`;
+
+const CardImg = styled.section`
+  height: 100%;
+  width: 100%;
+`;
+
+const CardIcon = styled.section`
+  padding: 15px;
+
+  p {
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  i {
+    outline: 0;
+    margin-right: 15px;
+  }
+`;
+
+const ImageHeart = styled.img`
+  transition: transform 0.2s; /* Animation */
+  font-weight: normal;
+  cursor: pointer;
+  width: 25px;
+
+  :hover {
+    transform: scale(1.5);
+  }
+`;
+
+const CardInfo = styled.section`
+  border: 1px solid lightgray;
+  margin: 5px 0;
+  border: 1px solid lightgray;
+  margin-bottom: 50px;
+  background: white;
+`;
+
+// # End Style # //
 
 class Post extends Component {
   constructor(props) {
@@ -24,8 +71,7 @@ class Post extends Component {
 
   render() {
     const blankHeart = (
-      <img
-        className="image-heart"
+      <ImageHeart
         onClick={this.addLikeHandler}
         src={notFull}
         alt="Not Selected"
@@ -33,7 +79,7 @@ class Post extends Component {
     );
 
     const clickedHeart = (
-      <img
+      <ImageHeart
         className="image-heart"
         onClick={this.addLikeHandler}
         src={fullHeart}
@@ -43,17 +89,17 @@ class Post extends Component {
 
     return (
       <Fragment>
-        <section className="card-info">
+        <CardInfo>
           <PostHeader
             username={this.props.post.username}
             thumbnailUrl={this.props.post.thumbnailUrl}
           />
-          <section className="card-img">
-            <img
+          <CardImg>
+            <FullWidth
               alt={this.props.post.username}
               src={this.props.post.imageUrl}
             />
-            <section className="card-icon">
+            <CardIcon>
               {/* When Heart is clicked on and off It will toggle my const values clickedHeart : blankHeart */}
               {this.state.likeClicked ? clickedHeart : blankHeart}
               {/* Adds a like and removes a Like */}
@@ -66,10 +112,10 @@ class Post extends Component {
               {/* <i onClick={this.addLikeHandler} class="far fa-heart fa-2x" /> */}
               {/* <i class="far fa-comment fa-2x" /> */}
               {/* <p>{this.state.likeTotal} Likes </p> */}
-            </section>
-          </section>
+            </CardIcon>
+          </CardImg>
           {/* <PostPage /> */}
-        </section>
+        </CardInfo>
       </Fragment>
     );
   }

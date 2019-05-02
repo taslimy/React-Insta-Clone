@@ -40,15 +40,12 @@ const Authenticate = App =>
       // console.log(this.state.loggedIn);
       return (
         <Fragment>
-          {this.state.loggedIn ? (
-            <App />
-          ) : (
-            <Login
+          {this.state.loggedIn ? <App /> : <Login
               username={this.usernameHandler}
               password={this.passwordHandler}
-              changeShit={this.handleLogin}
+              login={this.handleLogin}
             />
-          )}
+          }
         </Fragment>
       );
     }

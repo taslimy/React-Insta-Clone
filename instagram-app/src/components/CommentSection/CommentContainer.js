@@ -13,9 +13,9 @@ class CommentContainer extends Component {
     };
   }
 
-  addComment = (event) => {
+  addComment = event => {
     event.preventDefault();
-    const username = localStorage.getItem('user');
+    const username = localStorage.getItem("user");
     const newComment = {
       username: username,
       text: this.state.commentInput,

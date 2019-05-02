@@ -1,4 +1,4 @@
-.search-header {
+/* .search-header {
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -17,17 +17,17 @@ nav {
   max-width: 1010px;
   padding: 26px 20px;
   width: 100%;
-}
-
+} */
+/* 
 .search-logo i {
   display: flex;
   align-items: center;
   color: #242424;
   text-decoration: none;
-}
+} */
 
-.search-input input {
-  font-family: FontAwesome;
+/* .search-input input {
+font-family: FontAwesome;
   min-width: 125px;
   letter-spacing: 0.5px;
   width: 215px;
@@ -36,7 +36,7 @@ nav {
   border-radius: 3px;
   padding: 5px;
   color: #242424;
-}
+} */
 
 .search-icons i {
   letter-spacing: 20px;

@@ -1,15 +1,28 @@
 import React, { Fragment } from "react";
 import Post from "./Post";
-import "./Post.css";
+import styled from "styled-components";
+// import "./Post.css";
 
-const PostMap = (props) => {
+// # Style # //
+
+const Wrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+  max-width: 614px;
+`;
+
+// # End Style # //
+
+const PostMap = props => {
   return (
     <Fragment>
-    <section className="card-container">
-      {props.posts.map(e => (
-        <Post key={e.imageUrl} post={e} />
-      ))}
-    </section>
+      <Wrapper>
+        {props.posts.map(e => (
+          <Post key={e.imageUrl} post={e} />
+        ))}
+      </Wrapper>
     </Fragment>
   );
 };

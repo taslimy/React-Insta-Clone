@@ -1,9 +1,9 @@
-.comment-container {
+/* .comment-container {
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
-}
-
+} */
+/* 
 .user-comment {
   font-size: 15px;
 }
@@ -12,26 +12,26 @@ justify-content: flex-start;
   font-weight: bold;
   font-size: 15px;
   margin: 0px 5px 5px 0px;
-}
+} */
 
-.time-stamp{
+/* .time-stamp{
   text-transform: uppercase;
   color: gray;
   font-size: 13px;
-}
+} */
 
-form {
+/* .form-section form {
+  border: none;
   margin-top: 10px;
   border-top: 1px solid lightgray;
   padding: 5px;
 }
 
-input {
-  
+.form-section input {
   margin-top: 10px;
   border: none;
 }
 
-input::placeholder {
+.form-section input::placeholder {
   font-size: 15px
-}
+} */

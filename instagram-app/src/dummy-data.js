@@ -16,7 +16,7 @@ const dummyData = [
       },
       {
         username: "biancasaurus",
-        text: "Looks delicious!"
+        text: ""
       },
       {
         username: "martinseludo",
